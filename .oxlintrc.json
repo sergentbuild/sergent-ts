@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "import", "oxc", "unicorn"],
+  "options": { "typeAware": true },
+  "categories": { "correctness": "error", "suspicious": "error" },
+  "rules": {
+    "eslint/complexity": ["error", { "max": 10 }],
+    "eslint/max-params": ["error", { "max": 6, "countThis": "never" }],
+    "eslint/max-depth": ["error", { "max": 4 }],
+    "eslint/max-lines": ["error", { "max": 400 }],
+    "eslint/max-statements": ["error", { "max": 30 }],
+    "eslint/max-nested-callbacks": ["error", { "max": 3 }],
+    "eslint/max-classes-per-file": ["error", { "max": 1 }],
+    "import/no-cycle": "error"
+  },
+  "ignorePatterns": ["dist/", "node_modules/", ".claude/"],
+  "overrides": [
+    {
+      "files": ["**/src/index.ts"],
+      "rules": { "unicorn/require-module-specifiers": "off" }
+    }
+  ]
+}

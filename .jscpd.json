@@ -1,0 +1,9 @@
+{
+  "threshold": 3,
+  "noTips": true,
+  "minTokens": 50,
+  "exitCode": 1,
+  "format": ["typescript", "tsx"],
+  "ignore": ["**/node_modules/**", "**/dist/**", "**/.claude/**", "**/*.test.*", "**/*.spec.*"],
+  "reporters": ["console"]
+}

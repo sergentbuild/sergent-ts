@@ -1,0 +1,4 @@
+# Isolated installs (pnpm-style) make undeclared imports fail at resolution,
+# keeping each package.json manifest the real dependency policy.
+[install]
+linker = "isolated"

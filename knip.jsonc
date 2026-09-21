@@ -1,0 +1,27 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // oxlint and oxlint-tsgolint are invoked from the justfile (just lint),
+  // which knip cannot parse. They are exact-pinned in package.json and
+  // bun.lock so the TS/oxlint/tsgolint trio bumps in lockstep.
+  "ignoreDependencies": ["oxlint", "oxlint-tsgolint"],
+  "workspaces": {
+    "sergent-ts-core": {
+      "entry": ["src/**/*.test.ts"]
+    },
+    "sergent-ts-observability": {
+      "entry": ["src/**/*.test.ts"]
+    },
+    "sergent-ts-runtime": {
+      "entry": ["src/**/*.test.ts"]
+    },
+    "sergent-ts-run-record": {
+      "entry": ["src/**/*.test.ts"]
+    },
+    "sergent-ts-providers": {
+      "entry": ["src/**/*.test.ts"]
+    },
+    "sergent-ts-webllm": {
+      "entry": ["src/**/*.test.ts"]
+    }
+  }
+}

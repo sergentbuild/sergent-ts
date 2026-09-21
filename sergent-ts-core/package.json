@@ -1,0 +1,22 @@
+{
+  "name": "sergent-ts-core",
+  "version": "0.1.0",
+  "description": "Algorithmic core of sergent: shared vocabulary, contracts, and pure logic",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergentbuild/sergent-ts.git",
+    "directory": "sergent-ts-core"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/**/*.ts",
+    "!src/**/*.test.ts"
+  ],
+  "dependencies": {
+    "typebox": "1.3.23"
+  }
+}

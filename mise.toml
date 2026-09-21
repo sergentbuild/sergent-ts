@@ -1,0 +1,13 @@
+# Third-party toolchain root.
+# Node-ecosystem lint tools (typescript, oxlint, oxlint-tsgolint, knip) are
+# deliberately NOT here: they are exact-pinned in package.json + bun.lock so
+# oxlint can discover tsgolint in node_modules and the TS/oxlint/tsgolint trio
+# bumps in lockstep. This workspace is bun-managed: bun takes the
+# package-manager slot the spec assigns to pnpm.
+[tools]
+node = "24.20.0"
+bun = "1.4.0"
+biome = "2.5.10"
+"npm:jscpd" = "5.0.16"
+tokei = "14.0.0"
+coreutils = "0.2.2"

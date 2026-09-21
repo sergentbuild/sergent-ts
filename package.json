@@ -1,0 +1,15 @@
+{
+  "name": "sergent-ts",
+  "private": true,
+  "workspaces": [
+    "sergent-ts*"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "knip": "6.32.3",
+    "oxlint": "1.80.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "typescript": "7.0.2"
+  }
+}

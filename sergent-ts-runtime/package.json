@@ -1,0 +1,23 @@
+{
+  "name": "sergent-ts-runtime",
+  "version": "0.1.0",
+  "description": "Execution runtime driving sergent runs through the core execution model",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergentbuild/sergent-ts.git",
+    "directory": "sergent-ts-runtime"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/**/*.ts",
+    "!src/**/*.test.ts"
+  ],
+  "dependencies": {
+    "sergent-ts-core": "workspace:*",
+    "sergent-ts-observability": "workspace:*"
+  }
+}
